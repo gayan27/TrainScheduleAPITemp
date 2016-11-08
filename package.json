@@ -1,0 +1,16 @@
+{
+  "name": "trainapi",
+  "version": "0.0.0",
+  "description": "Trainapi",
+  "main": "app.js",
+  "author": {
+    "name": "Gayan Sampath",
+    "email": "<gssampath.27@gmail.com>"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
