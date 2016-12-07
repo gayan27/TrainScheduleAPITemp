@@ -1,7 +1,8 @@
 
-var fs = require('fs');
+
+//var fs = require('fs');
 var path = require('path');
-var buslist = require('../res/Trainschedule.json');
+var trainlist = require('../res/Trainschedule.json');
 
 
 /*
@@ -172,16 +173,37 @@ module.exports.serviceCall = function (app) {
         });
     */
 
-   
+
+
+       // * To get a Specific train Schedule Row this get method is used
+    app.get('/stations/by/id/:id', function (req, res) {
+        for (i = 0; i < trainlist.length; i++) {
+            var string_a = trainlist[i].TrainId.toUpperCase();
+            var string_b = req.params.id.toUpperCase();
+            if (string_a === string_b) {
+                return res.json({
+                    Error: false,
+                    Message: "Success",
+                    TrainList: trainlist[i]
+                });
+            }
+        }
+        return res.status(404).json({
+            Error: true,
+            Message: "Data not found"
+        });
+    });
     
     
-    // *to retreve  Specific set of train by start location
-    app.get('/stations/bystartstation/:s_location', function (req, res) {
+    
+    
+    // *to retreve  Specific set of trains by start location
+    app.get('/stations/by/startplace/:StartLocation', function (req, res) {
         var result = [];
         for (i = 0; i < trainlist.length; i++) {
-            var string_a = trainlist[i].s_location.toUpperCase();
-            var string_b = req.params.s_location.toUpperCase();
-            if (string_a === string_b) {
+            var str1 = trainlist[i].StartLocation.toUpperCase();
+            var str2 = req.params.StartLocation.toUpperCase();
+            if (str1 == str2) {
                 result.push(trainlist[i]);                       //add results into json array
             }
         }
@@ -196,47 +218,31 @@ module.exports.serviceCall = function (app) {
         }
     });
     
-    //  *to retreve  Specific set of train by end location
-    app.get('/stations/byendstation/:desti', function (req, res) {
-        for (i = 0; i < trainlist.length; i++) {
-            var string_a = trainlist[i].desti.toUpperCase();
-            var string_b = req.params.desti.toUpperCase();
-            if (string_a === string_b) {
-                return res.json({
-                    Error: false,
-                    Message: "Success",
-                    TrainList: trainlist[i]
-                });
+    
+    //To retreve all the train list for next 10min from real time
+    app.get('/stations/next/:location/:time', function (req, res) {
+        
+        var suggestedList = [];
+        var time = parseInt(req.params.time);
+        var location = req.params.location.toUpperCase();
+    
+        
+        for (var i = 0; i < file.length; i++) {
+            for (var j = 0; j < file[i].StopPoints.length; j++) {
+                if (location == file[i].StopPoints[j].Place.toUpperCase()) {
+                    if ((10 >= parseInt(file[i].StopPoints[j].StopTime) - time) && (0 <= parseInt(file[i].StopPoints[j].StopTime) - time)) {
+                        suggestedList.push(file[i]);
+                    }
+                }
             }
         }
-        return res.status(404).json({
-            Error: true,
-            Message: "Data not found"
-        });
-    });
-    
-    
-    //  *to retreve  Specific set of train by available day
-    app.get('/stations/byavaiday/:day', function (req, res) {
-        for (i = 0; i < trainlist.length; i++) {
-            var string_a = trainlist[i].avai_day.toUpperCase();
-            var string_b = req.params.avai_day.toUpperCase();
-            if (string_a === string_b) {
-                return res.json({
-                    Error: false,
-                    Message: "Success",
-                    TrainList: trainlist[i]
-                });
-            }
+        if (suggestedList.length == 0) {
+            return res.status(404).json({ "Error": false, "Message": "Data Not found" });
+        } else {
+            return res.status(200).json({ "Error": false, "Message": "Success", "Content": suggestedList });
         }
-        return res.status(404).json({
-            Error: true,
-            Message: "Data not found"
-        });
-    });
-    
-   
 
+    });
 
 
 }
