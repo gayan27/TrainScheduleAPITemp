@@ -1,788 +1,1211 @@
-﻿[
+[
   {
-    "t_id"      : "8058",
-	"t_name"    : "Ruhunu Kumari",
-	"t_type"    : "Express Train ",
-    "s_location": "Maradana",
-    "s_time"    : "15:50",
-    "desti"     : "Matara",
-    "arr_time"  : "18:15",
-	"avai_day"  : "Daily",
-    "sp1"       : "Slave Island",
-    "sp1t"      : "15:55",
-    "sp2"       : "Kollupitiya",
-    "sp2t"      : "15:58",
-    "sp3"       : "Bambalapitiya",
-    "sp3t"      : "16:02",
-    "sp4"       : "Dehiwala",
-    "sp4t"      : "16:06",
-    "sp5"       : "Mt.Lavinia",
-    "sp5t"      : "16:10",
-    "sp6"       : "Ratmalana",
-    "sp6t"      : "16:14",
-	"sp7"       : "Moratuwa",
-    "sp7t"      : "16:17",
-	"sp8"       : "Egoda Uyana",
-    "sp8t"      : "16:20",
-	"sp9"       : "Pinwattha",
-    "sp9t"      : "16:25",
-	"sp10"      : "Wadduwa",
-    "sp10t"     : "16:28",
-    "sp11"      : "Kalutara north",
-    "sp11t"     : "16:30",
-	"sp12"      : "Kalutara south",
-    "sp12t"     : "16:33",
-	"sp13"      : "Katukurunda",
-    "sp13t"     : "16:35",
-	"sp14"      : "Payagala north",
-    "sp14t"     : "16:40",
-	"sp15"      : "Payagala south",
-    "sp15t"     : "16:43",
-	"sp16"      : "Maggona",
-    "sp16t"     : "16:45",
-	"sp17"      : "Beruwala",
-    "sp17t"     : "16:50",
-	"sp18"      : "Hettimulla",
-    "sp18t"     : "16:53",
-	"sp19"      : "Aluthgama",
-    "sp19t"     : "16:55",
-	"sp20"      : "Induruwa",
-    "sp20t"     : "16:58",
-	"sp21"      : "Kosgama",
-    "sp21t"     : "17:02",
-	"sp22"      : "Ahungalla",
-    "sp22t"     : "17:05",
-	"sp23"      : "Balapitiya",
-    "sp23t"     : "17:08",
-	"sp24"      : "Ambalangoda",
-    "sp24t"     : "17:10",
-	"sp25"      : "Kahawa",
-    "sp25t"     : "17:12",
-	"sp26"      : "Hikkaduwa",
-    "sp26t"     : "17:15",
-	"sp27"      : "Dodanduwa",
-    "sp27t"     : "17:17",
-	"sp28"      : "Rajgama",
-    "sp28t"     : "17:20",
-	"sp29"      : "Boossa",
-    "sp29t"     : "17:23",
-	"sp30"      : "Gintota",
-    "sp30t"     : "17:25",
-	"sp31"      : "Galle",
-    "sp31t"     : "17:28",
-	"sp32"      : "Kotugoda",
-    "sp32t"     : "17:30",
-	"sp33"      : "Unawatuna",
-    "sp33t"     : "17:33",
-	"sp34"      : "Talpe",
-    "sp34t"     : "17:35",
-	"sp35"      : "Habaraduwa",
-    "sp35t"     : "17:38",
-	"sp36"      : "Koggala",
-    "sp36t"     : "17:40",
-	"sp37"      : "Kataluwa",
-    "sp37t"     : "17:45",
-	"sp38"      : "Ahangama",
-    "sp38t"     : "17:48",
-	"sp39"      : "Midigama",
-    "sp39t"     : "17:50",
-	"sp40"      : "Kumbalgama",
-    "sp40t"     : "17:55",
-	"sp41"      : "Weligama",
-    "sp41t"     : "17:58",
-	"sp42"      : "Polwatumodara",
-    "sp42t"     : "18:00",
-	"sp43"      : "Mirissa",
-    "sp43t"     : "18:05",
-	"sp44"      : "Kamdurugamuwa",
-    "sp44t"     : "18:08",
-	"sp45"      : "Walgama",
-    "sp45t"     : "18:10",
-	"sp46"      : "Matara",
-    "sp46t"     : "18:15",
-	"sp51"      : "",
-    "sp51t"     : "",
-	"sp52"      : "",
-    "sp52t"     : "",
-	"sp53"      : "",
-    "sp53t"     : "",
-	"sp54"      : "",
-    "sp54t"     : "",
-	"sp55"      : "",
-    "sp55t"     : "",
-	"sp56"      : "",
-    "sp56t"     : "",
-	"sp57"      : "",
-    "sp57t"     : "",
-	"sp58"      : "",
-    "sp58t"     : "",
-	"sp59"      : "",
-    "sp59t"     : ""
+    "TrainId"        : "8058",
+	"TrainName"      : "Ruhunu Kumari",
+	"TrainType"      : "Express Train ",
+    "StartLocation"  : "Maradana",
+    "StartTime"      : "1550",
+    "Destination"    : "Matara",
+    "StopTime"       : "1815",
+	"StopPoints"     :[
+	{
+	 "Place"         : "Slave Island",
+     "ArrivalTime"   : "1555"
+	},
+	{
+	 "Place"         : "Kollupitiya",
+     "ArrivalTime"   : "1558"
+	},
+	{
+	 "Place"         : "Bambalapitiya",
+     "ArrivalTime"   : "1602"
+	},
+	{
+	 "Place"         : "Dehiwala",
+     "ArrivalTime"   : "1606"
+	},
+	{
+     "Place"         : "Mt.Lavinia",
+     "ArrivalTime"   : "1610"
+	},
+	{
+    "Place"          : "Ratmalana",
+    "ArrivalTime"    : "1614"
+	},
 	
-	
-	 
-
-  },
+	{
+	 "Place"         : "Moratuwa",
+     "ArrivalTime"   : "1617"
+	},
+	{
+	"Place"          : "Egoda Uyana",
+    "ArrivalTime"    : "1620"
+	},
+	{
+	"Place"          : "Pinwattha",
+    "ArrivalTime"    : "1625"
+	},
+	{
+	"Place"          : "Wadduwa",
+    "ArrivalTime"    : "1628"
+    },
+	{
+	"Place"          : "Kalutara north",
+    "ArrivalTime"    : "1630"
+	},
+	{
+	"Place"          : "Kalutara south",
+    "ArrivalTime"    : "1633"
+	},
+	{
+	"Place"          : "Katukurunda",
+    "ArrivalTime"    : "1635"
+	},
+	{
+	"Place"          : "Payagala north",
+    "ArrivalTime"    : "1640"
+	},
+	{
+	"Place"          : "Payagala south",
+    "ArrivalTime"    : "1643"
+	},
+	{
+	"Place"          : "Maggona",
+    "ArrivalTime"    : "1645"
+	},
+	{
+    "Place"          : "Beruwala",
+    "ArrivalTime"    : "1650"
+	},
+	{
+	"Place"          : "Hettimulla",
+    "ArrivalTime"    : "1653"
+	},
+	{
+	"Place"          : "Aluthgama",
+    "ArrivalTime"    : "1655"
+	},
+	{
+	"Place"          : "Induruwa",
+    "ArrivalTime"    : "1658"
+	},
+	{
+    "Place"          : "Kosgama",
+    "ArrivalTime"    : "1702"
+	},
+	{
+	"Place"          : "Ahungalla",
+    "ArrivalTime"    : "1705"
+	},
+	{
+	"Place"          : "Balapitiya",
+    "ArrivalTime"    : "1708"
+	},
+	{
+	"Place"          : "Ambalangoda",
+    "ArrivalTime"    : "1710"
+	},
+	{
+	"Place"          : "Kahawa",
+    "ArrivalTime"    : "1712"
+	},
+	{
+	"Place"          : "Hikkaduwa",
+    "ArrivalTime"    : "1715"
+	},
+	{
+	"Place"          : "Dodanduwa",
+    "ArrivalTime"    : "1717"
+	},
+	{
+	"Place"          : "Rajgama",
+    "ArrivalTime"    : "1720"
+	},
+	{
+	"Place"          : "Boossa",
+    "ArrivalTime"    : "1723"
+	},
+	{
+	"Place"          : "Gintota",
+    "ArrivalTime"    : "1725"
+	},
+	{
+	"Place"          : "Galle",
+    "ArrivalTime"    : "1728"
+	},
+	{
+	"Place"          : "Kotugoda",
+    "ArrivalTime"    : "1730"
+	},
+	{
+	"Place"          : "Unawatuna",
+    "ArrivalTime"    : "1733"
+	},
+	{
+	"Place"          : "Talpe",
+    "ArrivalTime"    : "1735"
+	},
+	{
+     "Place"         : "Habaraduwa",
+    "ArrivalTime"    : "1738"
+	},
+	{
+	"Place"          : "Koggala",
+    "ArrivalTime"    : "1740"
+	},
+	{
+	"Place"          : "Kataluwa",
+    "ArrivalTime"    : "1745"
+	},
+	{
+	"Place"          : "Ahangama",
+    "ArrivalTime"    : "1748"
+	},
+	{
+	"Place"          : "Midigama",
+    "ArrivalTime"    : "1750"
+	},
+	{
+	"Place"          : "Kumbalgama",
+    "ArrivalTime     : "1755"
+	},
+	{
+	"Place"          : "Weligama",
+    "ArrivalTime"    : "1758"
+	},
+	{
+	"Place"          : "Polwatumodara",
+    "ArrivalTime"    : "1800"
+	},
+	{
+	"Place"          : "Mirissa",
+    "ArrivalTime"    : "1805"
+	}
+	{
+	"Place"          : "Kamdurugamuwa",
+    "ArrivalTime"    : "1808"
+	},
+	{
+	"Place"          : "Walgama",
+    "ArrivalTime"    : "1810"
+	},
+	{
+	"Place"          : "Matara",
+    "ArrivalTime"    : "1815"
+	}
+	]
+	 },
 
 
   {
-    "t_id"      : "1005",
-	"t_name"    : "Podi Menike",
-	"t_type"    : "Express Train ",
-    "s_location": "Colombo Fort",
-    "s_time"    : "05:55",
-    "desti"     : "Badulla",
-    "arr_time"  : "16:06",
-	"avai_day"  : "Daily",
-    "sp1"       : "Ragama",
-    "sp1t"      : "06:18",
-    "sp2"       : "Gampaha",
-    "sp2t"      : "06:31",
-    "sp3"       : "Veyangoda",
-    "sp3t"      : "06:44",
-    "sp4"       : "Mirigama",
-    "sp4t"      : "07:00",
-    "sp5"       : "Polgahawela Junction",
-    "sp5t"      : "07:18",
-    "sp6"       : "Panaliya",
-    "sp6t"      : "07:20",
-	"sp7"       : "Tismalpola",
-    "sp7t"      : "07:24",
-	"sp8"       : "Yatagama",
-    "sp8t"      : "07:28",
-	"sp9"       : "Rambukkana",
-    "sp9t"      : "07:31",
-	"sp10"      : "Kadigamuwa",
-    "sp10t"     : "07:35",
-    "sp11"      : "Gangoda",
-    "sp11t"     : "07:46",
-	"sp12"      : "Ihalakotte",
-    "sp12t"     : "07:53",
-	"sp13"      : "Balana",
-    "sp13t"     : "08:05",
-	"sp14"      : "Kadugannawa",
-    "sp14t"     : "08:14",
-	"sp15"      : "Pilimatalawa",
-    "sp15t"     : "08:22",
-	"sp16"      : "Peradeniya Junction",
-    "sp16t"     : "08:33",
-	"sp17"      : "Sarasavi Uyana",
-    "sp17t"     : "08:36",
-	"sp18"      : "Kandy",
-    "sp18t"     : "08:47",
-	"sp19"      : "Koshinna",
-    "sp19t"     : "09:00",
-	"sp20"      : "Gelioya",
-    "sp20t"     : "09:05",
-	"sp21"      : "Gampola",
-    "sp21t"     : "09:16",
-	"sp22"      : "Tembiligala",
-    "sp22t"     : "09:23",
-	"sp23"      : "Ulapane",
-    "sp23t"     : "09:31",
-	"sp24"      : "Nawalapitiya",
-    "sp24t"     : "09:48",
-	"sp25"      : "Inguruoya",
-    "sp25t"     : "10:03",
-	"sp26"      : "Galboda",
-    "sp26t"     : "10:17",
-	"sp27"      : "Watawala",
-    "sp27t"     : "10:37",
-	"sp28"      : "Ihalawatawala",
-    "sp28t"     : "10:43",
-	"sp29"      : "Rozella",
-    "sp29t"     : "10:56",
-	"sp30"      : "Hatton",
-    "sp30t"     : "11:14",
-	"sp31"      : "Kotagala",
-    "sp31t"     : "11:27",
-	"sp32"      : "Talawakele",
-    "sp32t"     : "11:43",
-	"sp33"      : "Watagoda",
-    "sp33t"     : "12:00",
-	"sp34"      : "Great Western",
-    "sp34t"     : "12:21",
-	"sp35"      : "Radella",
-    "sp35t"     : "12:31",
-	"sp36"      : "Nanuoya",
-    "sp36t"     : "12:45",
-	"sp37"      : "Perakumpura",
-    "sp37t"     : "13:00",
-	"sp38"      : "Ambewela",
-    "sp38t"     : "13:16",
-	"sp39"      : "Pattipola",
-    "sp39t"     : "13:24",
-	"sp39"      : "Ohiya",
-    "sp39t"     : "13:39",
-	"sp40"      : "Idalgashinna",
-    "sp40t"     : "14:00",
-	"sp41"      : "Haputale",
-    "sp41t"     : "14:17",
-	"sp42"      : "Diyatalawa",
-    "sp42t"     : "14:29",
-	"sp43"      : "Kinigama",
-    "sp43t"     : "14:51",
-	"sp44"      : "Heeloya",
-    "sp44t"     : "15:00",
-	"sp45"      : "Kitalella",
-    "sp45t"     : "15:09",
-	"sp46"      : "Ella",
-    "sp46t"     : "15:15",
-	"sp47"      : "Demodara",
-    "sp47t"     : "15:29",
-	"sp48"      : "Uduwara",
-    "sp48t"     : "15:42",
-	"sp49"      : "Haliela",
-    "sp49t"     : "15:51",
-	"sp50"      : "Badulla",
-    "sp50t"     : "16:06",
-	"sp51"      : "",
-    "sp51t"     : "",
-	"sp52"      : "",
-    "sp52t"     : "",
-	"sp53"      : "",
-    "sp53t"     : "",
-	"sp54"      : "",
-    "sp54t"     : "",
-	"sp55"      : "",
-    "sp55t"     : "",
-	"sp56"      : "",
-    "sp56t"     : "",
-	"sp57"      : "",
-    "sp57t"     : "",
-	"sp58"      : "",
-    "sp58t"     : "",
-	"sp59"      : "",
-    "sp59t"     : ""		 
+    "TrainId"        : "1005",
+	"TrainName"      : "Podi Menike",
+	"TrainType"      : "Express Train ",
+    "StartLocation"  : "Colombo Fort",
+    "StartTime"      : "0555",
+    "Destination"    : "Badulla",
+    "StopTime"       : "1606",
+	"StopPoints"     :[
+	{
+    "Place"          : "Ragama",
+    "ArrivalTime"    : "0618",
+    },
+	{
+	"Place"          : "Gampaha",
+    "ArrivalTime"    : "0631",
+    },
+	{
+	"Place"          : "Veyangoda",
+    "ArrivalTime"    : "0644",
+    },
+	{
+	"Place"          : "Mirigama",
+    "ArrivalTime"    : "0700",
+    },
+	{
+	"Place"          : "Polgahawela Junction",
+    "ArrivalTime"    : "0718",
+    },
+	{
+	"Place"          : "Panaliya",
+    "ArrivalTime"    : "0720",
+	},
+	{
+	"Place"          : "Tismalpola",
+    "ArrivalTime"    : "0724",
+	},
+	{
+	"Place"          : "Yatagama",
+    "ArrivalTime"    : "0728",
+	},
+	{
+	"Place"          : "Rambukkana",
+    "ArrivalTime"    : "0731",
+	},
+	{
+	"Place"          : "Kadigamuwa",
+    "ArrivalTime"    : "0735",
+    },
+	{
+	"Place"          : "Gangoda",
+    "ArrivalTime"    : "0746",
+	},
+	{
+	"Place"          : "Ihalakotte",
+    "ArrivalTime"    : "0753",
+	},
+	{
+	"Place"          : "Balana",
+    "ArrivalTime"    : "0805",
+	},
+	{
+	"Place"          : "Kadugannawa",
+    "ArrivalTime"    : "0814",
+	},
+	{
+	"Place"          : "Pilimatalawa",
+    "ArrivalTime"    : "0822",
+	},
+	{
+	"Place"          : "Peradeniya Junction",
+    "ArrivalTime"    : "0833",
+	},
+	{
+	"Place"          : "Sarasavi Uyana",
+    "ArrivalTime"    : "0836",
+	},
+	{
+	"Place"          : "Kandy",
+    "ArrivalTime"    : "0847",
+	},
+	{
+	"Place"          : "Koshinna",
+    "ArrivalTime"    : "0900",
+	},
+	{
+	"Place"          : "Gelioya",
+    "ArrivalTime"    : "0905",
+	},
+	{
+	"Place"          : "Gampola",
+    "ArrivalTime"    : "0916",
+	},
+	{
+	"Place"          : "Tembiligala",
+    "ArrivalTime"    : "0923",
+	},
+	{
+	"Place"          : "Ulapane",
+    "ArrivalTime"    : "0931",
+	},
+	{
+	"Place"          : "Nawalapitiya",
+    "ArrivalTime"    : "0948",
+	},
+	{
+	"Place"          : "Inguruoya",
+    "ArrivalTime"    : "1003",
+	},
+	{
+	"Place"          : "Galboda",
+    "ArrivalTime"    : "1017",
+	},
+	{
+	"Place"          : "Watawala",
+    "ArrivalTime"    : "1037",
+	},
+	{
+	"Place"          : "Ihalawatawala",
+    "ArrivalTime"    : "1043",
+	},
+	{
+	"Place"          : "Rozella",
+    "ArrivalTime"    : "1056",
+	},
+	{
+	"Place"          : "Hatton",
+    "ArrivalTime"    : "1114",
+	},
+	{
+	"Place"          : "Kotagala",
+    "ArrivalTime"    : "1127",
+	},
+	{
+	"Place"          : "Talawakele",
+    "ArrivalTime"    : "1143",
+	},
+	{
+	"Place"          : "Watagoda",
+    "ArrivalTime"    : "1200",
+	},
+	{
+	"Place"          : "Great Western",
+    "ArrivalTime"    : "1221",
+	},
+	{
+	"Place"          : "Radella",
+    "ArrivalTime"    : "1231",
+	},
+	{
+	"Place"          : "Nanuoya",
+    "ArrivalTime"    : "1245",
+	},
+	{
+	"Place"          : "Perakumpura",
+    "ArrivalTime"    : "1300",
+	},
+	{
+	"Place"          : "Ambewela",
+    "ArrivalTime"    : "1316",
+	},
+	{
+	"Place"          : "Pattipola",
+    "ArrivalTime"    : "1324",
+	},
+	{
+	"Place"          : "Ohiya",
+    "ArrivalTime"    : "1339",
+	},
+	{
+	"Place"          : "Idalgashinna",
+    "ArrivalTime"    : "1400",
+	},
+	{
+	"Place"          : "Haputale",
+    "ArrivalTime"    : "1417",
+	},
+	{
+	"Place"          : "Diyatalawa",
+    "ArrivalTime"    : "1429",
+	},
+	{
+	"Place"          : "Kinigama",
+    "ArrivalTime"    : "1451",
+	},
+	{
+	"Place"          : "Heeloya",
+    "ArrivalTime"    : "1500",
+	},
+	{
+	"Place"          : "Kitalella",
+    "ArrivalTime"    : "1509",
+	},
+	{
+	"Place"          : "Ella",
+    "ArrivalTime"    : "1515",
+	},
+	{
+	"Place"          : "Demodara",
+    "ArrivalTime"    : "1529",
+	},
+	{
+	"Place"          : "Uduwara",
+    "ArrivalTime"    : "1542",
+	},
+	{
+	"Place"          : "Haliela",
+    "ArrivalTime"    : "1551",
+	}
+	]
+	 },
 
-  },
-
-
-    {
-    "t_id"      : "4077",
-	"t_name"    : "Yal Devi",
-	"t_type"    : "Express Train ",
-    "s_location": "Colombo Fort",
-    "s_time"    : "06:05",
-    "desti"     : "Chunnakam",
-    "arr_time"  : "14:35",
-	"avai_day"  : "Daily",
-    "sp1"       : "Maradana",
-    "sp1t"      : "06:15",
-    "sp2"       : "Ragama",
-    "sp2t"      : "06:27",
-    "sp3"       : "Gampaha",
-    "sp3t"      : "06:39",
-    "sp4"       : "Veyangoda",
-    "sp4t"      : "06:50",
-    "sp5"       : "Mirigama",
-    "sp5t"      : "07:00",
-	"sp6"       : "Ambepussa",
-    "sp6t"      : "07:15",
-	"sp7"       : "Alawwa",
-    "sp7t"      : "07:20",
-	"sp8"       : "Polgahawela",
-    "sp8t"      : "07:25",
-	"sp9"       : "Girambe",
-    "sp9t"      : "07:30",
-    "sp10"      : "Taalawattegedara",
-    "sp10t"     : "07:37",
-	"sp11"      : "Potuhera",
-    "sp11t"     : "07:43",
-	"sp12"      : "Nailiya",
-    "sp12t"     : "07:50",
-	"sp13"      : "Kurunegala",
-    "sp13t"     : "07:55",
-	"sp14"      : "Muttetugala",
-    "sp14t"     : "08:00",
-	"sp15"      : "Wellawa",
-    "sp15t"     : "08:15",
-	"sp16"      : "Ganewatte",
-    "sp16t"     : "08:29",
-	"sp17"      : "Hiriyala",
-    "sp17t"     : "08:35",
-	"sp18"      : "Nagollagama",
-    "sp18t"     : "08:43",
-	"sp19"      : "Thimbiriyagedara",
-    "sp19t"     : "08:50",
-	"sp20"      : "Maho Junction",
-    "sp20t"     : "08:55",
-	"sp21"      : "Randenigama",
-    "sp21t"     : "09:00",
-	"sp22"      : "Ambanpola",
-    "sp22t"     : "09:15",
-	"sp23"      : "Galgamuwa",
-    "sp23t"     : "09:21",
-	"sp24"      : "Senarathgama",
-    "sp24t"     : "09:30",
-	"sp25"      : "Tambuttegama",
-    "sp25t"     : "09:44",
-	"sp26"      : "Talawa",
-    "sp26t"     : "09:57",
-	"sp27"      : "Sravasthipura",
-    "sp27t"     : "10:05",
-	"sp28"      : "Anuradhapura New Town",
-    "sp28t"     : "10:12",
-	"sp29"      : "Anuradhapura",
-    "sp29t"     : "10:25",
-	"sp30"      : "Saliyapura",
-    "sp30t"     : "10:30",
-	"sp31"      : "Medagama",
-    "sp31t"     : "10:35",
-	"sp32"      : "Parasangahawewa",
-    "sp32t"     : "10:40",
-	"sp33"      : "Medawachchi",
-    "sp33t"     : "10:58",
-	"sp34"      : "Poonewa",
-    "sp34t"     : "11:03",
-	"sp35"      : "Eratperivakulam",
-    "sp35t"     : "11:15",
-	"sp36"      : "Vavunia",
-    "sp36t"     : "11:29",
-	"sp37"      : "Thandikulam",
-    "sp37t"     : "11:35",
-	"sp38"      : "Omantai",
-    "sp38t"     : "11:52",
-	"sp39"      : "Puliyankulam",
-    "sp39t"     : "12:02",
-	"sp40"      : "Mankulam",
-    "sp40t"     : "12:20",
-	"sp41"      : "Murikandi",
-    "sp41t"     : "12:35",
-	"sp42"      : "Kilinochchi",
-    "sp42t"     : "12:50",
-	"sp43"      : "Paranthan",
-    "sp43t"     : "12:56",
-	"sp44"      : "Elephant Pass",
-    "sp44t"     : "13:04",
-	"sp45"      : "Pallai",
-    "sp45t"     : "13:18",
-	"sp46"      : "Eluthummattvual",
-    "sp46t"     : "13:24",
-	"sp47"      : "Mirisuvil",
-    "sp47t"     : "13:29",
-	"sp48"      : "Kodikamam",
-    "sp48t"     : "13:34",
-	"sp49"      : "Meesalai",
-    "sp49t"     : "13;39",
-	"sp50"      : "Sankaththanai",
-    "sp50t"     : "13:43",
-	"sp51"      : "Chavakachchri",
-    "sp51t"     : "13:58",
-	"sp52"      : "Thachanthoppu",
-    "sp52t"     : "14:04",
-	"sp53"      : "Navatkuli",
-    "sp53t"     : "14:08",
-	"sp54"      : "Punkankulam",
-    "sp54t"     : "14:14",
-	"sp55"      : "Jaffna",
-    "sp55t"     : "14:22",
-	"sp56"      : "Kokuvil",
-    "sp56t"     : "14:25",
-	"sp57"      : "Kondavil",
-    "sp57t"     : "14:28",
-	"sp58"      : "Inuvil",
-    "sp58t"     : "14:32",
-	"sp59"      : "Chunnakam",
-    "sp59t"     : "14:35"	 
-
-  },
 
     {
-    "t_id"      : "1033",
-	"t_name"    : "Intercity Express Train",
-	"t_type"    : "Express Train ",
-    "s_location": "Colombo Fort",
-    "s_time"    : "17:20",
-    "desti"     : "Kandy",
-    "arr_time"  : "20:03",
-	"avai_day"  : "Friday and Saturday",
-    "sp1"       : "Ragama",
-    "sp1t"      : "17:40",
-    "sp2"       : "Gampaha",
-    "sp2t"      : "17:53",
-    "sp3"       : "Polgahawela",
-    "sp3t"      : "18:03",
-    "sp4"       : "Pilimatalawa",
-    "sp4t"      : "19:46",
-    "sp5"       : "Peradeniya",
-    "sp5t"      : "19:55",
-    "sp6"       : "Kandy",
-    "sp6t"      : "20:03",
-	"sp7"       : "",
-    "sp7t"      : "",
-	"sp8"       : "",
-    "sp8t"      : "",
-	"sp9"       : "",
-    "sp9t"      : "",
-	"sp10"      : "",
-    "sp10t"     : "",
-    "sp11"      : "",
-    "sp11t"     : "",
-	"sp12"      : "",
-    "sp12t"     : "",
-	"sp13"      : "",
-    "sp13t"     : "",
-	"sp14"      : "",
-    "sp14t"     : "",
-	"sp15"      : "",
-    "sp15t"     : "",
-	"sp16"      : "",
-    "sp16t"     : "",
-	"sp17"      : "",
-    "sp17t"     : "",
-	"sp18"      : "",
-    "sp18t"     : "",
-	"sp19"      : "",
-    "sp19t"     : "",
-	"sp20"      : "",
-    "sp20t"     : "",
-	"sp21"      : "",
-    "sp21t"     : "",
-	"sp22"      : "",
-    "sp22t"     : "",
-	"sp23"      : "",
-    "sp23t"     : "",
-	"sp24"      : "",
-    "sp24t"     : "",
-	"sp25"      : "",
-    "sp25t"     : "",
-	"sp26"      : "",
-    "sp26t"     : "",
-	"sp27"      : "",
-    "sp27t"     : "",
-	"sp28"      : "",
-    "sp28t"     : "",
-	"sp29"      : "",
-    "sp29t"     : "",
-	"sp30"      : "",
-    "sp30t"     : "",
-	"sp31"      : "",
-    "sp31t"     : "",
-	"sp32"      : "",
-    "sp32t"     : "",
-	"sp33"      : "",
-    "sp33t"     : "",
-	"sp34"      : "",
-    "sp34t"     : "",
-	"sp35"      : "",
-    "sp35t"     : "",
-	"sp36"      : "",
-    "sp36t"     : "",
-	"sp37"      : "",
-    "sp37t"     : "",
-	"sp38"      : "",
-    "sp38t"     : "",
-	"sp39"      : "",
-    "sp39t"     : "",
-	"sp40"      : "",
-    "sp40t"     : "",
-	"sp41"      : "",
-    "sp41t"     : "",
-	"sp42"      : "",
-    "sp42t"     : "",
-	"sp43"      : "",
-    "sp43t"     : "",
-	"sp44"      : "",
-    "sp44t"     : "",
-	"sp45"      : "",
-    "sp45t"     : "",
-	"sp46"      : "",
-    "sp46t"     : "",
-	"sp47"      : "",
-    "sp47t"     : "",
-	"sp48"      : "",
-    "sp48t"     : "",
-	"sp49"      : "",
-    "sp49t"     : "",
-	"sp50"      : "",
-    "sp50t"     : "",
-	"sp51"      : "",
-    "sp51t"     : "",
-	"sp52"      : "",
-    "sp52t"     : "",
-	"sp53"      : "",
-    "sp53t"     : "",
-	"sp54"      : "",
-    "sp54t"     : "",
-	"sp55"      : "",
-    "sp55t"     : "",
-	"sp56"      : "",
-    "sp56t"     : "",
-	"sp57"      : "",
-    "sp57t"     : "",
-	"sp58"      : "",
-    "sp58t"     : "",
-	"sp59"      : "",
-    "sp59t"     : ""
+    "TrainId"         : "4077",
+	"TrainName"       : "Yal Devi",
+	"TrainType"       : "Express Train ",
+    "StartLocation"   : "Colombo Fort",
+    "StartTime"       : "0605",
+    "Destination"     : "Chunnakam",
+    "StopTime"        : "1435",
+	"StopPoints"      :[
+	{
+    "Place"           : "Maradana",
+    "ArrivalTime"     : "0615"
+    },
+	{
+	"Place"           : "Ragama",
+    "ArrivalTime"     : "0627"
+    },
+	{
+	"Place"           : "Gampaha",
+    "ArrivalTime"     : "0639"
+    },
+	{
+	"Place"           : "Veyangoda",
+    "ArrivalTime"     : "0650"
+    },
+	{
+	"Place"           : "Mirigama",
+    "ArrivalTime"     : "0700"
+	},
+	{
+	"Place"           : "Ambepussa",
+    "ArrivalTime"     : "0715"
+	},
+	{
+	"Place"           : "Alawwa",
+    "ArrivalTime"     : "0720"
+	},
+	{
+	"Place"           : "Polgahawela",
+    "ArrivalTime"     : "0725"
+	},
+	{
+	"Place"           : "Girambe",
+    "ArrivalTime"     : "0730"
+    },
+	{
+	"Place"           : "Taalawattegedara",
+    "ArrivalTime"     : "0737"
+	},
+	{
+	"Place"           : "Potuhera",
+    "ArrivalTime"     : "0743"
+	},
+	{
+	"Place"           : "Nailiya",
+    "ArrivalTime      : "0750"
+	},
+	{
+	"Place"           : "Kurunegala",
+    "ArrivalTime"     : "0755"
+	},
+	{
+	"Place"           : "Muttetugala",
+    "ArrivalTime"     : "0800"
+	},
+	{
+	"Place"           : "Wellawa",
+    "ArrivalTime"     : "0815"
+	},
+	{
+	"Place"           : "Ganewatte",
+    "ArrivalTime"     : "0829"
+	},
+	{
+	"Place"           : "Hiriyala",
+    "ArrivalTime"     : "0835"
+	},
+	{
+	"Place"           : "Nagollagama",
+    "ArrivalTime"     : "0843"
+	},
+	{
+	"Place"           : "Thimbiriyagedara",
+    "ArrivalTime"     : "0850"
+	},
+	{
+	"Place"           : "Maho Junction",
+    "ArrivalTime"     : "0855"
+	},
+	{
+	"Place"           : "Randenigama",
+    "ArrivalTime"     : "0900"
+	},
+	{
+	"Place"           : "Ambanpola",
+    "ArrivalTime"     : "0915"
+	},
+	{
+	"Place"           : "Galgamuwa",
+    "ArrivalTime"     : "0921"
+	},
+	{
+	"Place"           : "Senarathgama",
+    "ArrivalTime"     : "0930"
+	},
+	{
+	"Place"           : "Tambuttegama",
+    "ArrivalTime"     : "0944"
+	},
+	{
+	"Place"           : "Talawa",
+    "ArrivalTime"     : "0957"
+	},
+	{
+	"Place"           : "Sravasthipura",
+    "ArrivalTime"     : "1005"
+	},
+	{
+	"Place"           : "Anuradhapura New Town",
+    "ArrivalTime"     : "1012"
+	},
+	{
+	"Place"           : "Anuradhapura",
+    "ArrivalTime"     : "1025"
+	},
+	{
+	"Place"           : "Saliyapura",
+    "ArrivalTime"     : "1030"
+	},
+	{
+	"Place"           : "Medagama",
+    "ArrivalTime"     : "1035"
+	},
+	{
+	"Place"           : "Parasangahawewa",
+    "ArrivalTime"     : "1040"
+	},
+	{
+	"Place"           : "Medawachchi",
+    "ArrivalTime"     : "1058"
+	},
+	{
+	"Place"           : "Poonewa",
+    "ArrivalTime"     : "1103"
+	},
+	{
+	"Place"           : "Eratperivakulam",
+    "ArrivalTime"     : "1115"
+	},
+	{
+	"Place"           : "Vavunia",
+    "ArrivalTime"     : "1129"
+	},
+	{
+	"Place"           : "Thandikulam",
+    "ArrivalTime"     : "1135"
+	},
+	{
+	"Place"           : "Omantai",
+    "ArrivalTime"     : "1152"
+	},
+	{
+	"Place"           : "Puliyankulam",
+    "ArrivalTime"     : "1202"
+	},
+	{
+	"Place"           : "Mankulam",
+    "ArrivalTime"     : "1220"
+	},
+	{
+	"Place"           : "Murikandi",
+    "ArrivalTime"     : "1235"
+	},
+	{
+	"Place"           : "Kilinochchi",
+    "ArrivalTime"     : "1250"
+	},
+	{
+	"Place"           : "Paranthan",
+    "ArrivalTime"     : "1256"
+	},
+	{
+	"Place"           : "Elephant Pass",
+    "ArrivalTime"     : "1304"
+	},
+	{
+	"Place"           : "Pallai",
+    "ArrivalTime"     : "1318"
+	},
+	{
+	"Place"           : "Eluthummattvual",
+    "ArrivalTime"     : "1324"
+	},
+	{
+	"Place"           : "Mirisuvil",
+    "ArrivalTime"     : "1329"
+	},
+	{
+	"Place"           : "Kodikamam",
+    "ArrivalTime"     : "1334"
+	},
+	{
+	"Place"           : "Meesalai",
+    "ArrivalTime"     : "1339"
+	},
+	{
+	"Place"           : "Sankaththanai",
+    "ArrivalTime"     : "1343"
+	},
+	{
+	"Place"           : "Chavakachchri",
+    "ArrivalTime"     : "1358"
+	},
+	{
+	"Place"           : "Thachanthoppu",
+    "ArrivalTime"     : "1404"
+	},
+	{
+	"Place"           : "Navatkuli",
+    "ArrivalTime"     : "1408"
+	},
+	{
+	"Place"           : "Punkankulam",
+    "ArrivalTime"     : "1414"
+	},
+	{
+	"Place"           : "Jaffna",
+    "ArrivalTime"     : "1422"
+	},
+	{
+	"Place"           : "Kokuvil",
+    "ArrivalTime"     : "1425"
+	},
+	{
+	"Place"           : "Kondavil",
+    "ArrivalTime"     : "1428"
+	},
+	{
+	"Place"           : "Inuvil",
+    "ArrivalTime"     : "1432"
+	},
+	{
+	"Place"           : "Chunnakam",
+    "ArrivalTime"     : "1435"	
+	} 
+	]
+  },
+
+    {
+    "TrainId"         : "1033",
+	"TrainName"       : "Intercity Express Train",
+	"TrainType"       : "Express Train ",
+    "StartLocation"   : "Colombo Fort",
+    "StartTime"       : "1720",
+    "Destination"     : "Kandy",
+    "StopTime"        : "2003",
+	"StopPoints"      :[
+	{
+    "Place"           : "Ragama",
+    "ArrivalTime"     : "1740"
+    },
+	{
+	"Place"           : "Gampaha",
+    "ArrivalTime"     : "1753"
+    },
+	{
+	"Place"           : "Polgahawela",
+    "ArrivalTime"     : "18:03"
+    },
+	{
+	"Place"           : "Pilimatalawa",
+    "ArrivalTime"     : "1946"
+    },
+	{
+	"Place"           : "Peradeniya",
+    "ArrivalTime"     : "1955"
+    }
+	]
+   },
 		 
 
-  },
+    {
+    "TrainId"         : "4085",
+	"TrainName"       : "Rajarata Rejini",
+	"TrainType"       : "Express Train",
+    "StartLocation"   : "Colombo Fort",
+    "StartTime"       : "1345",
+    "Destination"     : "Vavuniya",
+    "StopTime"        : "2017",
+    "StopPoints"      :[
+	},
+	{
+	"Place"           : "Maradana",
+    "ArrivalTime"     : "1358"
+    },
+	{
+	"Place"           : "Ragama",
+    "ArrivalTime"     : "1407"
+    },
+	{
+	"Place"           : "Gampaha",
+    "ArrivalTime"     : "1420"
+    },
+	{
+	"Place"           : "Veyangoda",
+    "ArrivalTime"     : "1433"
+    },
+	{
+	"Place"           : "Mirigama",
+    "ArrivalTime"     : "1446"
+	},
+	{
+	"Place"           : "Alawwa",
+    "ArrivalTime"     : "1502"
+	},
+	{
+	"Place"           : "Polgahawela",
+    "ArrivalTime"     : "1520"
+	},
+	{
+	"Place"           : "Girambe",
+    "ArrivalTime"     : "1528"
+    },
+	{
+	"Place"           : "Tala wattegedara",
+    "ArrivalTime"     : "1532"
+	},
+	{
+	"Place"           : "Potuhera",
+    "ArrivalTime"     : "1543"
+	},
+	{
+	"Place"           : "Nailiya",
+    "ArrivalTime"     : "1551"
+	},
+	{
+	"Place"           : "Kurunegala",
+    "ArrivalTime"     : "1558"
+	},
+	{
+	"Place"           : "Muttetugala",
+    "ArrivalTime"     : "1602"
+	},
+	{
+	"Place"           : "Wellawa",
+    "ArrivalTime"     : "1615"
+	},
+	{
+	"Place"           : "Ganewatte",
+    "ArrivalTime"     : "1630"
+	},
+	{
+	"Place"           : "Hiriyala",
+    "ArrivalTime"     : "1640"
+	},
+	{
+	"Place"           : "Nagollagama",
+    "ArrivalTime"     : "1648"
+	},
+	{
+	"Place"           : "Thimbiriyagedara",
+    "ArrivalTime"     : "1654"
+	},
+	{
+	"Place"           : "Maho Junction",
+    "ArrivalTime"     : "1703"
+	},
+	{
+	"Place"           : "Randenigama",
+    "ArrivalTime"     : "1709"
+	},
+	{
+	"Place"           : "Ambanpola",
+    "ArrivalTime"     : "1728"
+	},
+	{
+	"Place"           : "Galgamuwa",
+    "ArrivalTime"     : "1742"
+	},
+	{
+	"Place"           : "Senarathgama",
+    "ArrivalTime"     : "1755"
+	},
+	{
+	"Place"           : "Tambuttegama",
+    "ArrivalTime"     : "1807"
+	},
+	{
+	"Place"           : "Talawa",
+    "ArrivalTime"     : "1821"
+	},
+	{
+	"Place"           : "Sravasthi pura",
+    "ArrivalTime"     : "1833"
+	},
+	{
+	"Place"           : "Anuradhapura New Town",
+    "ArrivalTime"     : "1840"
+	},
+	{
+	"Place"           : "Anuradhapura",
+    "ArrivalTime"     : "1905"
+	},
+	{
+	"Place"           : "Saliyapura",
+    "ArrivalTime"     : "1916"
+	},
+	{
+	"Place"           : "Parasangahawewa",
+    "ArrivalTime"     : "1927"
+	},
+	{
+	"Place"           : "Medagama",
+    "ArrivalTime"     : "1932"
+	},
+	{
+	"Place"           : "Medawachchi",
+    "ArrivalTime"     : "1947"
+	},
+	{
+	"Place"           : "Poonewa",
+    "ArrivalTime"     : "1957"
+	},
+	{
+	"Place"           : "Eratperivakulam",
+    "ArrivalTime"     : "2010"
+	}
+	]
+   },
 
 
     {
-    "t_id"      : "4085",
-	"t_name"    : "Rajarata Rejini",
-	"t_type"    : "Express Train",
-    "s_location": "Colombo Fort",
-    "s_time"    : "13:45",
-    "desti"     : "Vavuniya",
-    "arr_time"  : "20:17",
-	"avai_day"  : "Daily",
-    "sp1"       : "Maradana",
-    "sp1t"      : "13:58",
-    "sp2"       : "Ragama",
-    "sp2t"      : "14:07",
-    "sp3"       : "Gampaha",
-    "sp3t"      : "14:20",
-    "sp4"       : "Veyangoda",
-    "sp4t"      : "14:33",
-    "sp5"       : "Mirigama",
-    "sp5t"      : "14:46",
-	"sp6"       : "Alawwa",
-    "sp6t"      : "15:02",
-	"sp7"       : "Polgahawela",
-    "sp7t"      : "15:20",
-	"sp8"       : "Girambe",
-    "sp8t"      : "15:28",
-    "sp9"       : "Tala wattegedara",
-    "sp9t"      : "15:32",
-	"sp10"      : "Potuhera",
-    "sp10t"     : "15:43",
-	"sp11"      : "Nailiya",
-    "sp11t"     : "15:51",
-	"sp12"      : "Kurunegala",
-    "sp12t"     : "15:58",
-	"sp13"      : "Muttetugala",
-    "sp13t"     : "16:02",
-	"sp14"      : "Wellawa",
-    "sp14t"     : "16:15",
-	"sp15"      : "Ganewatte",
-    "sp15t"     : "16:30",
-	"sp16"      : "Hiriyala",
-    "sp16t"     : "16:40",
-	"sp17"      : "Nagollagama",
-    "sp17t"     : "16:48",
-	"sp18"      : "Thimbiriyagedara",
-    "sp18t"     : "16:54",
-	"sp19"      : "Maho Junction",
-    "sp19t"     : "17:03",
-	"sp20"      : "Randenigama",
-    "sp20t"     : "17:09",
-	"sp21"      : "Ambanpola",
-    "sp21t"     : "17:28",
-	"sp22"      : "Galgamuwa",
-    "sp22t"     : "17:42",
-	"sp23"      : "Senarathgama",
-    "sp23t"     : "17:55",
-	"sp24"      : "Tambuttegama",
-    "sp24t"     : "18:07",
-	"sp25"      : "Talawa",
-    "sp25t"     : "18:21",
-	"sp26"      : "Sravasthi pura",
-    "sp26t"     : "18:33",
-	"sp27"      : "Anuradhapura New Town",
-    "sp27t"     : "18:40",
-	"sp28"      : "Anuradhapura",
-    "sp28t"     : "19:05",
-	"sp29"      : "Saliyapura",
-    "sp29t"     : "19.16",
-	"sp30"      : "Parasangahawewa",
-    "sp30t"     : "19:27",
-	"sp31"      : "Medagama",
-    "sp31t"     : "19:32",
-	"sp32"      : "Medawachchi",
-    "sp32t"     : "19:47",
-	"sp33"      : "Poonewa",
-    "sp33t"     : "19:57",
-	"sp34"      : "Eratperivakulam",
-    "sp34t"     : "20:10",
-	"sp35"      : "",
-    "sp35t"     : "",
-	"sp36"      : "",
-    "sp36t"     : "",
-	"sp37"      : "",
-    "sp37t"     : "",
-	"sp38"      : "",
-    "sp38t"     : "",
-	"sp39"      : "",
-    "sp39t"     : "",
-	"sp40"      : "",
-    "sp40t"     : "",
-	"sp41"      : "",
-    "sp41t"     : "",
-	"sp42"      : "",
-    "sp42t"     : "",
-	"sp43"      : "",
-    "sp43t"     : "",
-	"sp44"      : "",
-    "sp44t"     : "",
-	"sp45"      : "",
-    "sp45t"     : "",
-	"sp46"      : "",
-    "sp46t"     : "",
-	"sp47"      : "",
-    "sp47t"     : "",
-	"sp48"      : "",
-    "sp48t"     : "",
-	"sp49"      : "",
-    "sp49t"     : "",
-	"sp50"      : "",
-    "sp50t"     : "",
-	"sp51"      : "",
-    "sp51t"     : "",
-	"sp52"      : "",
-    "sp52t"     : "",
-	"sp53"      : "",
-    "sp53t"     : "",
-	"sp54"      : "",
-    "sp54t"     : "",
-	"sp55"      : "",
-    "sp55t"     : "",
-	"sp56"      : "",
-    "sp56t"     : "",
-	"sp57"      : "",
-    "sp57t"     : "",
-	"sp58"      : "",
-    "sp58t"     : "",
-	"sp59"      : "",
-    "sp59t"     : ""
-		 
-
-  },
+    "TrainId"         : "1009",
+	"TrainName"       : "Kandy Intercity Express Train",
+	"TrainType"       : "Intercity Train ",
+    "StartLocation"   : "Colombo Fort",
+    "StartTime"       : "0700",
+    "Destination"     : "Kandy",
+    "StopTime"        : "0931",
+	"StopPoints"      :[
+	{
+    "Place"           : "Ragama",
+    "ArrivalTime"     : "0715"
+    },
+	{
+	"Place"           : "Gampaha",
+    "ArrivalTime"     : "0732"
+    },
+	{
+	"Place"           : "Polgahawela",
+    "ArrivalTime"     : "0750"
+    
+	},
+	{
+	"Place"           : "Pilimathalawa",
+    "ArrivalTime"     : "0900"
+    },
+	{
+	"Place"           : "Peradeniya",
+    "ArrivalTime"     : "0922"
+    }
+	]	 
+   },
 
 
     {
-    "t_id"      : "1005",
-	"t_name"    : "Podi Menike",
-	"t_type"    : "Express Train ",
-    "s_location": "Colombo Fort",
-    "s_time"    : "05:55",
-    "desti"     : "Badulla",
-    "arr_time"  : "16:06",
-	"avai_day"  : "",
-    "sp1"       : "",
-    "sp1t"      : "",
-    "sp2"       : "",
-    "sp2t"      : "",
-    "sp3"       : "",
-    "sp3t"      : "",
-    "sp4"       : "",
-    "sp4t"      : "",
-    "sp5"       : "",
-    "sp5t"      : "",
-    "sp6"       : "",
-    "sp6t"      : "",
-	"sp7"       : "",
-    "sp7t"      : "",
-	"sp8"       : "",
-    "sp8t"      : "",
-	"sp9"       : "",
-    "sp9t"      : "",
-	"sp10"      : "",
-    "sp10t"     : "",
-    "sp11"      : "",
-    "sp11t"     : "",
-	"sp12"      : "",
-    "sp12t"     : "",
-	"sp13"      : "",
-    "sp13t"     : "",
-	"sp14"      : "",
-    "sp14t"     : "",
-	"sp15"      : "",
-    "sp15t"     : "",
-	"sp16"      : "",
-    "sp16t"     : "",
-	"sp17"      : "",
-    "sp17t"     : "",
-	"sp18"      : "",
-    "sp18t"     : "",
-	"sp19"      : "",
-    "sp19t"     : "",
-	"sp20"      : "",
-    "sp20t"     : "",
-	"sp21"      : "",
-    "sp21t"     : "",
-	"sp22"      : "",
-    "sp22t"     : "",
-	"sp23"      : "",
-    "sp23t"     : "",
-	"sp24"      : "",
-    "sp24t"     : "",
-	"sp25"      : "",
-    "sp25t"     : "",
-	"sp26"      : "",
-    "sp26t"     : "",
-	"sp27"      : "",
-    "sp27t"     : "",
-	"sp28"      : "",
-    "sp28t"     : "",
-	"sp29"      : "",
-    "sp29t"     : "",
-	"sp30"      : "",
-    "sp30t"     : "",
-	"sp31"      : "",
-    "sp31t"     : "",
-	"sp32"      : "",
-    "sp32t"     : "",
-	"sp33"      : "",
-    "sp33t"     : "",
-	"sp34"      : "",
-    "sp34t"     : "",
-	"sp35"      : "",
-    "sp35t"     : "",
-	"sp36"      : "",
-    "sp36t"     : "",
-	"sp37"      : "",
-    "sp37t"     : "",
-	"sp38"      : "",
-    "sp38t"     : "",
-	"sp39"      : "",
-    "sp39t"     : "",
-	"sp40"      : "",
-    "sp40t"     : "",
-	"sp41"      : "",
-    "sp41t"     : "",
-	"sp42"      : "",
-    "sp42t"     : "",
-	"sp43"      : "",
-    "sp43t"     : "",
-	"sp44"      : "",
-    "sp44t"     : "",
-	"sp45"      : "",
-    "sp45t"     : "",
-	"sp46"      : "",
-    "sp46t"     : "",
-	"sp47"      : "",
-    "sp47t"     : "",
-	"sp48"      : "",
-    "sp48t"     : "",
-	"sp49"      : "",
-    "sp49t"     : "",
-	"sp50"      : "",
-    "sp50t"     : "",
-	"sp51"      : "",
-    "sp51t"     : "",
-	"sp52"      : "",
-    "sp52t"     : "",
-	"sp53"      : "",
-    "sp53t"     : "",
-	"sp54"      : "",
-    "sp54t"     : "",
-	"sp55"      : "",
-    "sp55t"     : "",
-	"sp56"      : "",
-    "sp56t"     : "",
-	"sp57"      : "",
-    "sp57t"     : "",
-	"sp58"      : "",
-    "sp58t"     : "",
-	"sp59"      : "",
-    "sp59t"     : ""
-		 
+    "TrainId"         : "1029",
+	"TrainName"       : "Intercity Express Colombo Kandy",
+	"TrainType"       : "Intercity Express",
+    "StartLocation"   : "Colombo Fort",
+    "StartTime"       : "1535",
+    "Destination"     : "Kandy",
+    "StopTime"        : "1806",
+	"StopPoints"      :[
+	{
+    "Place"           : "Ragama",
+    "ArrivalTime"     : "1555"
+    },
+	{
+	"Place"           : "Gampaha",
+    "ArrivalTime"     : "1610"
+    },
+	{
+	"Place"           : "Polgahawela",
+    "ArrivalTime"     : "1625"
+    },
+	{
+	"Place"           : "Pilimathalawa",
+    "ArrivalTime"     : "1738"
+    },
+	{
+	"Place"           : "Peradeniya",
+    "ArrivalTime"     : "1757"
+    }
+	]
+   },
 
-  }
+    {
+    "TrainId"         : "1031",
+	"TrainName"       : "Intercity Express Colombo Kandy",
+	"TrainType"       : "Intercity Express",
+    "StartLocation"   : "Colombo Fort",
+    "StartTime"       : "0900",
+    "Destination"     : "Kandy",
+    "StopTime"        : "1131",
+	"StopPoints"      :[
+    {
+	"Place"           : "Ragama",
+    "ArrivalTime"     : "0931"
+    },
+	{
+	"Place"           : "Gampaha",
+    "ArrivalTime"     : "0945"
+    },
+	{
+	"Place"           : "Polgahawela",
+    "ArrivalTime"     : "1000"
+    },
+	{
+	"Place"           : "Pilimathalawa",
+    "ArrivalTime"     : "1045"
+    },
+	{
+	"Place"           : "Peradeniya",
+    "ArrivalTime"     : "1100"
+    }
+    ]
+   },
+  
+
+    {
+    "TrainId"         : "4001",
+	"TrainName"       : " Kankesanthurai Intercity Express Train",
+	"TrainType"       : "Intercity Express Passenger Train Air Conditioned ",
+    "StartLocation"   : "Colombo Fort",
+    "StartTime"       : "0545",
+    "Destination"     : "Kankesanthurai",
+    "StopTime"        : "1220",
+	"StopPoints"      :[
+	{
+    "Place"           : "Anuradhapura",
+    "ArrivalTime"     : "0913"
+     },
+	{
+	"Place"           : "Medawachchi",
+    "ArrivalTime"     : "0939"
+     },
+	{
+	"Place"           : "Vavunia",
+    "ArrivalTime"     : "1004"
+     },
+	{
+	"Place"           : "Kilinochchi",
+    "ArrivalTime"     : "1106"
+     },
+	{
+	"Place"           : "Kodikamam",
+    "ArrivalTime"     : "1137"
+     },
+	{
+	"Place"           : "Chavakachchri",
+    "ArrivalTime"     : "1145"
+	 },
+	{
+	"Place"           : "Navatkuli",
+    "ArrivalTime"     : "1154"
+	 },
+	{
+	"Place"           : "Jaffna",
+    "ArrivalTime"     : "1203"
+	 },
+	{
+	"Place"           : "Kondavil",
+    "ArrivalTime"     : "1208"
+	 },
+	{
+	"Place"           : "Chunnakam",
+    "ArrivalTime"     : "1213"
+     }
+	 ]
+   },
+
+
+{
+   "TrainId"          : "1015",
+	"TrainName"       : "Udarata Menike",
+	"TrainType"       : "Express Passenger Train",
+    "StartLocation"   : "Colombo Fort",
+    "StartTime"       : "0830",
+    "Destination"     : "Badulla",
+    "StopTime"        : "1832",
+	"StopPoints"      :[
+	{
+    "Place"           : "Ragama",
+    "ArrivalTime"     : "0830"
+    },
+	{
+	 "Place"          : "Gampaha",
+    "ArrivalTime"     : "0902"
+     },
+	{
+	"Place"           : "Veyangoda",
+    "ArrivalTime"     : "0912"
+     },
+	{
+	"Place"           : "Mirigama",
+    "ArrivalTime"     : "0930"
+     },
+	{
+	"Place"           : "Polgahawela Junction",
+    "ArrivalTime"     : "0944"
+     },
+	{
+	"Place"           : "Panaliya",
+    "ArrivalTime"     : "0946"
+	 },
+	{
+	"Place"           : "Tismalpola",
+    "ArrivalTime"     : "0948"
+	 },
+	{
+	"Place"           : "Yatagama",
+    "ArrivalTime"     : "0953"
+	 },
+	{
+	"Place"           : "Rambukkana",
+    "ArrivalTime"     : "0956"
+	 },
+	{
+	"Place"           : "Kadigamuwa",
+    "ArrivalTime"     : "1001"
+     },
+	{
+	"Place"           : "Gangoda",
+    "ArrivalTime"     : "1005"
+	 },
+	{
+	"Place"           : "Ihalakotte",
+    "ArrivalTime"     : "1012"
+	 },
+	{
+	"Place"           : "Balana",
+    "ArrivalTime"     : "1020"
+	 },
+	{
+	"Place"           : "Kadugannawa",
+    "ArrivalTime"     : "1038"
+	 },
+	{
+	"Place"           : "Pilimatalawa",
+    "ArrivalTime"     : "1044"
+	 },
+	{
+	"Place"           : "Peradeniya Junction",
+    "ArrivalTime"     : "1055"
+	 },
+	{
+	"Place"           : "Sarasavi Uyana",
+    "ArrivalTime"     : "1006"
+	 },
+	{
+	"Place"           : "Kandy",
+    "ArrivalTime"     : "1110"
+	 },
+	{
+	"Place"           : "Koshinna",
+    "ArrivalTime"     : "1116"
+	 },
+	{
+	"Place"           : "Gelioya",
+    "ArrivalTime"     : "1124"
+	 },
+	{
+	"Place"           : "Gampola",
+    "ArrivalTime"     : "1137"
+	 },
+	{
+	"Place"           : "Tembiligala",
+    "ArrivalTime"     : "1148"
+	 },
+	{
+	"Place"           : "Ulapane",
+    "ArrivalTime"     : "1201"
+	 },
+	{
+	"Place"           : "Nawalapitiya",
+    "ArrivalTime"     : "1219"
+	 },
+	{
+	"Place"           : "Inguruoya",
+    "ArrivalTime"     : "1225"
+	 },
+	{
+	"Place"           : "Galboda",
+    "ArrivalTime"     : "1235"
+	 },
+	{
+	"Place"           : "Watawala",
+    "ArrivalTime"     : "1244"
+	 },
+	{
+	"Place"           : "Ihalawatawala",
+    "ArrivalTime"     : "1258"
+	 },
+	{
+	"Place"           : "Rozella",
+    "ArrivalTime"     : "1312"
+	 },
+	{
+	"Place"           : "Hatton",
+    "ArrivalTime"     : "1328"
+	 },
+	{
+	"Place"           : "Kotagala",
+    "ArrivalTime"     : "1341"
+	 },
+	{
+	"Place"           : "Talawakele",
+    "ArrivalTime"     : "1357"
+	 },
+	{
+	"Place"           : "Watagoda",
+    "ArrivalTime"     : "1424"
+	 },
+	{
+	"Place"           : "Great Western",
+    "ArrivalTime"     : "1437"
+	 },
+	{
+	"Place"           : "Radella",
+    "ArrivalTime"     : "1447"
+	 },
+	{
+	"Place"           : "Nanuoya",
+    "ArrivalTime"     : "1501"
+	 },
+	{
+	"Place"           : "Perakumpura",
+    "ArrivalTime"     : "1515"
+	 },
+	{
+	"Place"           : "Ambewela",
+    "ArrivalTime"     : "1532"
+	 },
+	{
+	"Place"           : "Pattipola",
+    "ArrivalTime"     : "1540"
+	 },
+	{
+	"Place"           : "Ohiya",
+    "ArrivalTime"     : "1556"
+	 },
+	{
+	"Place"           : "Idalgashinna",
+    "ArrivalTime"     : "1616"
+	 },
+	{
+	"Place"           : "Haputale",
+    "ArrivalTime"     : "1632"
+	 },
+	{
+	"Place"           : "Diyatalawa",
+    "ArrivalTime"     : "1644"
+	 },
+	{
+	"Place"           : "Kinigama",
+    "ArrivalTime"     : "1705"
+	 },
+	{
+	"Place"           : "Heeloya",
+    "ArrivalTime"     : "1714"
+	 },
+	{
+	"Place"           : "Kitalella",
+    "ArrivalTime"     : "1722"
+	 },
+	{
+	"Place"           : "Ella",
+    "ArrivalTime"     : "1728"
+	 },
+	{
+	"Place"           : "Demodara",
+    "ArrivalTime"     : "1742"
+	 },
+	{
+	"Place"           : "Uduwara",
+    "ArrivalTime"     : "1754"
+	 },
+	{
+	"Place"           : "Haliela",
+    "ArrivalTime"     : "1807"
+	 }
+	 ]
+	}
 
 
    
   ]
+
