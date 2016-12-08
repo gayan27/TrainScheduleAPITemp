@@ -220,7 +220,7 @@ module.exports.serviceCall = function (app) {
     
     
     //To retreve all the train list for next 10min from real time
-    app.get('/stations/next/:location/:time', function (req, res) {
+     app.get('/stations/next/:lotitude/:langitude/:time', function (req, res) {
         
         var suggestedList = [];
         var time = parseInt(req.params.time);
