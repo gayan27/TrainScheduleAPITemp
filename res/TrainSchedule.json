@@ -3,197 +3,296 @@
     "TrainId"        : "8058",
 	"TrainName"      : "Ruhunu Kumari",
 	"TrainType"      : "Express Train ",
-    "StartLocation"  : "Maradana",
-    "StartTime"      : "1550",
-    "Destination"    : "Matara",
-    "StopTime"       : "1815",
+	"StartLocation"  :[
+			{
+			"place"          : "Maradana",
+			"StartTime"      : "1550",
+			"Longitude"      : 79.8663,
+			"Latitude"       : 6.9295
+			}
+			          ]
+	"StopLocation"   :[	
+			{	
+			"Place"          : "Matara",
+			"StopTime"       : "1815",
+			"Longitude"      : 80.5435,
+			"Latitude"       : 5.9517
+			}
+							  ]
 	"StopPoints"     :[
-	{
-	 "Place"         : "Slave Island",
-     "ArrivalTime"   : "1555"
-	},
-	{
-	 "Place"         : "Kollupitiya",
-     "ArrivalTime"   : "1558"
-	},
-	{
-	 "Place"         : "Bambalapitiya",
-     "ArrivalTime"   : "1602"
-	},
-	{
-	 "Place"         : "Dehiwala",
-     "ArrivalTime"   : "1606"
-	},
-	{
-     "Place"         : "Mt.Lavinia",
-     "ArrivalTime"   : "1610"
-	},
-	{
-    "Place"          : "Ratmalana",
-    "ArrivalTime"    : "1614"
-	},
-	
-	{
-	 "Place"         : "Moratuwa",
-     "ArrivalTime"   : "1617"
-	},
-	{
-	"Place"          : "Egoda Uyana",
-    "ArrivalTime"    : "1620"
-	},
-	{
-	"Place"          : "Pinwattha",
-    "ArrivalTime"    : "1625"
-	},
-	{
-	"Place"          : "Wadduwa",
-    "ArrivalTime"    : "1628"
-    },
-	{
-	"Place"          : "Kalutara north",
-    "ArrivalTime"    : "1630"
-	},
-	{
-	"Place"          : "Kalutara south",
-    "ArrivalTime"    : "1633"
-	},
-	{
-	"Place"          : "Katukurunda",
-    "ArrivalTime"    : "1635"
-	},
-	{
-	"Place"          : "Payagala north",
-    "ArrivalTime"    : "1640"
-	},
-	{
-	"Place"          : "Payagala south",
-    "ArrivalTime"    : "1643"
-	},
-	{
-	"Place"          : "Maggona",
-    "ArrivalTime"    : "1645"
-	},
-	{
-    "Place"          : "Beruwala",
-    "ArrivalTime"    : "1650"
-	},
-	{
-	"Place"          : "Hettimulla",
-    "ArrivalTime"    : "1653"
-	},
-	{
-	"Place"          : "Aluthgama",
-    "ArrivalTime"    : "1655"
-	},
-	{
-	"Place"          : "Induruwa",
-    "ArrivalTime"    : "1658"
-	},
-	{
-    "Place"          : "Kosgama",
-    "ArrivalTime"    : "1702"
-	},
-	{
-	"Place"          : "Ahungalla",
-    "ArrivalTime"    : "1705"
-	},
-	{
-	"Place"          : "Balapitiya",
-    "ArrivalTime"    : "1708"
-	},
-	{
-	"Place"          : "Ambalangoda",
-    "ArrivalTime"    : "1710"
-	},
-	{
-	"Place"          : "Kahawa",
-    "ArrivalTime"    : "1712"
-	},
-	{
-	"Place"          : "Hikkaduwa",
-    "ArrivalTime"    : "1715"
-	},
-	{
-	"Place"          : "Dodanduwa",
-    "ArrivalTime"    : "1717"
-	},
-	{
-	"Place"          : "Rajgama",
-    "ArrivalTime"    : "1720"
-	},
-	{
-	"Place"          : "Boossa",
-    "ArrivalTime"    : "1723"
-	},
-	{
-	"Place"          : "Gintota",
-    "ArrivalTime"    : "1725"
-	},
-	{
-	"Place"          : "Galle",
-    "ArrivalTime"    : "1728"
-	},
-	{
-	"Place"          : "Kotugoda",
-    "ArrivalTime"    : "1730"
-	},
-	{
-	"Place"          : "Unawatuna",
-    "ArrivalTime"    : "1733"
-	},
-	{
-	"Place"          : "Talpe",
-    "ArrivalTime"    : "1735"
-	},
-	{
-     "Place"         : "Habaraduwa",
-    "ArrivalTime"    : "1738"
-	},
-	{
-	"Place"          : "Koggala",
-    "ArrivalTime"    : "1740"
-	},
-	{
-	"Place"          : "Kataluwa",
-    "ArrivalTime"    : "1745"
-	},
-	{
-	"Place"          : "Ahangama",
-    "ArrivalTime"    : "1748"
-	},
-	{
-	"Place"          : "Midigama",
-    "ArrivalTime"    : "1750"
-	},
-	{
-	"Place"          : "Kumbalgama",
-    "ArrivalTime     : "1755"
-	},
-	{
-	"Place"          : "Weligama",
-    "ArrivalTime"    : "1758"
-	},
-	{
-	"Place"          : "Polwatumodara",
-    "ArrivalTime"    : "1800"
-	},
-	{
-	"Place"          : "Mirissa",
-    "ArrivalTime"    : "1805"
-	}
-	{
-	"Place"          : "Kamdurugamuwa",
-    "ArrivalTime"    : "1808"
-	},
-	{
-	"Place"          : "Walgama",
-    "ArrivalTime"    : "1810"
-	},
-	{
-	"Place"          : "Matara",
-    "ArrivalTime"    : "1815"
-	}
-	]
+			{
+			 "Place"         : "Slave Island",
+			 "ArrivalTime"   : "1555",
+			 "Longitude"     : 79.8495,
+			 "Latitude"      : 6.9229
+			},
+			{
+			 "Place"         : "Kollupitiya",
+			 "ArrivalTime"   : "1558",
+			 "Longitude"     : 79.8482,
+			 "Latitude"      : 6.9113
+			},
+			{
+			 "Place"         : "Bambalapitiya",
+			 "ArrivalTime"   : "1602",
+			 "Longitude"     : 79.853,
+			 "Latitude"      : 6.8935
+			},
+				{
+			 "Place"         : "Dehiwala",
+			 "ArrivalTime"   : "1606",
+			 "Longitude"     : 79.8758,
+			 "Latitude"      : 6.8397
+
+			},
+			{
+			 "Place"         : "Mt.Lavinia",
+			 "ArrivalTime"   : "1610",
+			 "Longitude"     : 79.8758,
+			 "Latitude"      : 6.8397
+			},
+			{
+			"Place"          : "Ratmalana",
+			"ArrivalTime"    : "1614",
+			"Longitude"      : 79.8801,
+			"Latitude"       : 6.8195
+			},
+			
+			{
+			 "Place"         : "Moratuwa",
+			 "ArrivalTime"   : "1617",
+			 "Longitude"     : 79.8778,
+			 "Latitude"      : 6.7964
+			},
+			{
+			"Place"          : "Egoda Uyana",
+			"ArrivalTime"    : "1620",
+			"Longitude"      : 79.8981,
+			"Latitude"       : 6.7356
+			},
+			{
+			"Place"          : "Pinwattha",
+			"ArrivalTime"    : "1625",
+			"Longitude"      : 79.916,
+			"Latitude"       : 6.686 
+			},
+			{
+			"Place"          : "Wadduwa",
+			"ArrivalTime"    : "1628",
+			"Longitude"      : 79.9286,
+			"Latitude"       : 6.6628
+			},
+			{
+			"Place"          : "Kalutara north",
+			"ArrivalTime"    : "1630",
+			"Longitude"      : 79.9542,
+			"Latitude"       : 6.6012
+			},
+			{
+			"Place"          : "Kalutara south",
+			"ArrivalTime"    : "1633",
+			"Longitude"      : 79.959,
+			"Latitude"       : 6.5841
+			},
+			{
+			"Place"          : "Katukurunda",
+			"ArrivalTime"    : "1635",
+			"Longitude"      : 79.9661,
+			"Latitude"       : 6.56
+			},
+			{
+			"Place"          : "Payagala north",
+			"ArrivalTime"    : "1640",
+			"Longitude"      : 79.9750292,
+			"Latitude"       : 6.5316039
+			},
+			{
+			"Place"          : "Payagala south",
+			"ArrivalTime"    : "1643",
+			"Longitude"      : 79.9788377,
+			"Latitude"       : 6.521681
+			},
+			{
+			"Place"          : "Maggona",
+			"ArrivalTime"    : "1645",
+			"Longitude"      : 79.9813969,
+			"Latitude"       : 6.5048087
+			},
+			{
+			"Place"          : "Beruwala",
+			"ArrivalTime"    : "1650",
+			"Longitude"      : 79.9835,
+			"Latitude"       : 6.4769
+			},
+			{
+			"Place"          : "Hettimulla",
+			"ArrivalTime"    : "1653",
+			"Longitude"      : 79.9908006,
+			"Latitude"       : 6.4580766
+			},
+			{
+			"Place"          : "Aluthgama",
+			"ArrivalTime"    : "1655",
+			"Longitude"      : 80.0003,
+			"Latitude"       : 6.4329
+			},
+			{
+			"Place"          : "Induruwa",
+			"ArrivalTime"    : "1658",
+			"Longitude"      : 80.0086,
+			"Latitude"       : 6.3874
+			},
+			{
+			"Place"          : "Kosgama",
+			"ArrivalTime"    : "1702",
+			"Longitude"      : 80.1373,
+			"Latitude"       : 6.9407
+			},
+			{
+			"Place"          : "Ahungalla",
+			"ArrivalTime"    : "1705",
+			"Longitude"      : 80.0376,
+			"Latitude"       : 6.3127
+			},
+			{
+			"Place"          : "Balapitiya",
+			"ArrivalTime"    : "1708",
+			"Longitude"      : 80.0479,
+			"Latitude"       : 6.2754
+			},
+			{
+			"Place"          : "Ambalangoda",
+			"ArrivalTime"    : "1710",
+			"Longitude"      : 80.055,
+			"Latitude"       : 6.2353
+			},
+			{
+			"Place"          : "Kahawa",
+			"ArrivalTime"    : "1712",
+			"Longitude"      : 80.0739817,
+			"Latitude"       : 6.1831936
+			},
+			{
+			"Place"          : "Hikkaduwa",
+			"ArrivalTime"    : "1715",
+			"Longitude"      : 80.1002,
+			"Latitude"       : 6.1422
+			},
+			{
+			"Place"          : "Dodanduwa",
+			"ArrivalTime"    : "1717",
+			"Longitude"      : 80.1328634,
+			"Latitude"       : 6.0982156
+			},
+			{
+			"Place"          : "Rajgama",
+			"ArrivalTime"    : "1720",
+			"Longitude"      : 80.1399,
+			"Latitude"       : 6.0932
+			},
+			{
+			"Place"          : "Boossa",
+			"ArrivalTime"    : "1723",
+			"Longitude"      : 80.1249,
+			"Latitude"       : 6.1118
+			},
+			{
+			"Place"          : "Gintota",
+			"ArrivalTime"    : "1725",
+			"Longitude"      : 80.1794,
+			"Latitude"       : 6.0607
+			},
+			{
+			"Place"          : "Galle",
+			"ArrivalTime"    : "1728",
+			"Longitude"      : 80.2143,
+			"Latitude"       : 6.0333
+			},
+			{
+			"Place"          : "Kotugoda",
+			"ArrivalTime"    : "1730",
+			"Longitude"      : ,
+			"Latitude"       : 
+			},
+			{
+			"Place"          : "Unawatuna",
+			"ArrivalTime"    : "1733",
+			"Longitude"      : 80.2492,
+			"Latitude"       : 6.0219
+			},
+			{
+			"Place"          : "Talpe",
+			"ArrivalTime"    : "1735",
+			"Longitude"      : 80.2801,
+			"Latitude"       : 5.9984
+			},
+			{
+			 "Place"         : "Habaraduwa",
+			"ArrivalTime"    : "1738",
+			"Longitude"      : 80.3072,
+			"Latitude"       : 5.994
+			},
+			{
+			"Place"          : "Koggala",
+			"ArrivalTime"    : "1740",
+			"Longitude"      : 80.3317,
+			"Latitude"       : 5.986
+			},
+			{
+			"Place"          : "Kataluwa",
+			"ArrivalTime"    : "1745",
+			"Longitude"      : 80.3404,
+			"Latitude"       : 5.9826
+			},
+			{
+			"Place"          : "Ahangama",
+			"ArrivalTime"    : "1748",
+			"Longitude"      : 80.3638,
+			"Latitude"       : 5.973
+			},
+			{
+			"Place"          : "Midigama",
+			"ArrivalTime"    : "1750",
+			"Longitude"      : 80.3915,
+			"Latitude"       : 5.9652
+			},
+			{
+			"Place"          : "Kumbalgama",
+			"ArrivalTime"    : "1755",
+			"Longitude"      : 80.4096,
+			"Latitude"       : 5.963
+			},
+			{
+			"Place"          : "Weligama",
+			"ArrivalTime"    : "1758",
+			"Longitude"      : 80.4296503,
+			"Latitude"       : 5.9756006
+			},
+			{
+			"Place"          : "Polwatumodara",
+			"ArrivalTime"    : "1800",
+			"Longitude"      : 80.4574,
+			"Latitude"       : 5.9643
+			},
+			{
+			"Place"          : "Mirissa",
+			"ArrivalTime"    : "1805",
+			"Longitude"      : 80.4734,
+			"Latitude"       : 5.9568
+			} 
+			{
+			"Place"          : "Kamdurugamuwa",
+			"ArrivalTime"    : "1808",	
+			"Longitude"      : 80.9435,
+			"Latitude"       : 5.9435
+			},
+			{
+			"Place"          : "Walgama",
+			"ArrivalTime"    : "1810",
+			"Longitude"      : 80.5142,
+			"Latitude"       : 5.9453
+			}
+	                   ]
 	 },
 
 
