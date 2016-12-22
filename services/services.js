@@ -1,8 +1,7 @@
 
-
 //var fs = require('fs');
 var path = require('path');
-var trainlist = require('../res/Trainschedule.json');
+var trainlist = require('../res/TrainSchedule.json');
 
 
 /*
@@ -200,9 +199,13 @@ module.exports.serviceCall = function (app) {
     // *to retreve  Specific set of trains by start location
     app.get('/stations/by/startplace/:StartLocation', function (req, res) {
         var result = [];
+       // console.log(req.url);
         for (i = 0; i < trainlist.length; i++) {
-            var str1 = trainlist[i].StartLocation.toUpperCase();
+            var str1 = trainlist[i].StartLocation.Place.toUpperCase();
+            console.log(str1);
+            //str1.toUpperCase();
             var str2 = req.params.StartLocation.toUpperCase();
+            //console.log(str2);
             if (str1 == str2) {
                 result.push(trainlist[i]);                       //add results into json array
             }
@@ -214,16 +217,19 @@ module.exports.serviceCall = function (app) {
             });
         }
         else {
-            return res.json({ Error: false, Message: "Sucess", Content: result });
+            return res.json({ Error: false, Message: "Success", Content: result });
         }
     });
     
     
     //To retreve all the train list for next 10min from real time
-     app.get('/stations/next/:lotitude/:langitude/:time', function (req, res) {
+    app.get('/stations/next/:latitude/:longitude/:time', function (req, res) {
+    //app.get('/stations/next/:location/:time', function (req, res) {
         
         var suggestedList = [];
         var time = parseInt(req.params.time);
+        var long = parseFloat(req.params.longitude);
+        var lati = parseFloat(req.params.latitude);
         var location = req.params.location.toUpperCase();
     
         
