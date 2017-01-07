@@ -1,3 +1,7 @@
+/**
+* Services.js - Service for API
+* @author Gayan Sampath
+**/
 
 //var fs = require('fs');
 var path = require('path');
