@@ -727,7 +727,7 @@
 	{
 		"TrainId"         : "1029",
 		"TrainName"       : "Intercity Express Colombo Kandy",
-		"TrainType"       : "Intercity Express",
+		"TrainType"       : "Intercity Train",
 		"StartLocation"   :
 			{
 				"Place"          : "Colombo Fort",

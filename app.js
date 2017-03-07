@@ -1,22 +1,53 @@
-﻿
-var express = require('express');
+﻿var express = require('express');
 var bodyParser = require('body-parser');
-var fs = require('fs');
-var services = require('./services/services.js');
-var config = require('./config.json'); 
+
+
+
+
+var config = require('./app-config.json');
+var getRequest = require('./requestController/getRequest');
+var postRequest = require('./requestController/postRequest');
+var updateRequest = require('./requestController/updateRequest');
+
+var utills = require('./utills');
+
+
 var app = express();
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
-app.use(bodyParser.urlencoded({ extended: true }));
+utills.logger("Started Executing ./app.js", 200);
 
-//To access TrainSchedule.json  file directly 
-app.use("/DataFiles", express.static(__dirname + '/res/TrainSchedule.json')); 
-services.serviceCall(app);
 
-//starting the server
+/**
+ * call the services
+ */
+getRequest.getMethods(app);
+postRequest.postMethods(app);
+updateRequest.updateMethods(app);
+
+
+/**
+ * start the server
+ */
 app.listen(config.SERVER_PORT, function (res, err) {
     if (err) {
-        console.log('Somthing going wrong Please Check The Error :' + err);
+        utills.logger("Server didn't started properly", 500);
+        console.log('Please Check The Error :' + err);
         res.status(500);
     }
-    console.log('TrainSchedule is listening on port ' + config.SERVER_PORT);
+    var str = "Listening on Port " + config.SERVER_PORT;
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
