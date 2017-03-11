@@ -9,13 +9,13 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 /**
- * create a collection structure for a newly sent train
+ * create a collection structure for a newly sent train data
  */
 var train =new Schema({
-    ID        :{type:String, required:true,unique:true},
-    D_NTC     :{type:String, required:true},
-    RouteNo   :{type:String, required:true},
-    TrainType   :String
+    ID        :{type:String, required:true,unique:true,max:4},
+    D_NTC     :{type:String, required:true,max:6},
+    RouteNo   :{type:String, required:true,max:5},
+    TrainType :String
 });
 var Trains = mongoose.model('Trains',train);
 exports.Trains = Trains;
@@ -25,8 +25,8 @@ exports.Trains = Trains;
  * create  the collection structure for newly send Driver
  */
 var driver = new Schema({
-    NIC       :{type:String, required:true,unique:true},
-    NTC       :{type:String, required:true,unique:true},
+    NIC       :{type:String, required:true,unique:true,max:10},
+    NTC       :{type:String, required:true,unique:true,max:6},
     Name      :{
         fName:String,
         lName:String
@@ -42,13 +42,13 @@ exports.Drivers = mongoose.model('Drivers',driver);
  * create a schema to enter a Root
  */
 var geoData = new Schema({
-    place      :{type:String,require:true},
+    place      : {type:String,require:true},
     latitude   : {type:Number,require:true},
     longitude  : {type:Number,require:true}
 });
 
 var route = new Schema({
-    RouteNo: {type: String, require: true, unique: true},
+    RouteNo: {type: String, require: true, unique: true,max:5},
     Description: String,
     StopPoints: [geoData]
 });

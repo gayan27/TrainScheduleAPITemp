@@ -6,7 +6,7 @@ var collectionModel = require('../dataModels/collectionModels');
 
 
 module.exports.postMethods = function (app) {
-    utills.logger(__dirname + "\\getRequest.js", 200);
+    utills.logger(__dirname + "\\postRequest.js", 200);
 
 
     /**
@@ -25,8 +25,10 @@ module.exports.postMethods = function (app) {
         newTrain.save(function (err) {
             if (err) {
                 utills.logger("Document is not saved", 500, err);
+                utills.sendResponce(200,res,err);
             } else {
                 utills.logger('Document is saved successfully', 200);
+                utills.sendResponce(200,res);
             }
         });
         res.end();

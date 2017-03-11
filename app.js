@@ -37,7 +37,8 @@ app.listen(config.SERVER_PORT, function (res, err) {
         res.status(500);
     }
     var str = "Listening on Port " + config.SERVER_PORT;
-})
+    utills.logger(str,200);
+});
 
 
 
