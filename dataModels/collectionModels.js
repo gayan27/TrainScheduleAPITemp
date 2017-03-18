@@ -38,6 +38,34 @@ var driver = new Schema({
 exports.Drivers = mongoose.model('Drivers',driver);
 
 
+
+/**
+ * create  the collection structure for newly sent schedule
+ */
+var place = new Schema({
+    Place       :String,
+    ArrivalTime : String
+});
+
+var Schedule = new Schema({
+    TrainId         :{type:String,unique:true, required:true,max:6},
+    TrainName       :{type:String, required:true},
+    TrainType       :{type:String, required:true},
+    RouteNo         :{type:String, required:true},
+    StartLocation   :{
+        Place    :String,
+        StartTime:String
+    },
+    StopLocation    :{
+        Place    :String,
+        StopTime :String
+    },
+    StopPoints  :[place]
+});
+exports.TrainSchedules= mongoose.model('TrainSchedules',Schedule);
+
+
+
 /**
  * create a schema to enter a Root
  */

@@ -17,10 +17,10 @@ module.exports.postMethods = function (app) {
 
         utills.DBConnection();
         var newTrain = new collectionModel.Trains({
-            ID        :req.body.trainId,
-            D_NTC     :req.body.driverNTC,
-            RouteNo   :req.body.routeNo,
-            TrainType :req.body.trainType
+            ID        :req.body.ID,
+            D_NTC     :req.body.D_NTC,
+            RouteNo   :req.body.RouteNo,
+            TrainType :req.body.TrainType
         });
         newTrain.save(function (err) {
             if (err) {
@@ -31,7 +31,6 @@ module.exports.postMethods = function (app) {
                 utills.sendResponce(200,res);
             }
         });
-        res.end();
 
     });
 
@@ -44,26 +43,25 @@ module.exports.postMethods = function (app) {
 
         utills.DBConnection();
         var newDriver = collectionModel.Drivers({
-            NIC       :req.body.driverNIC,
-            NTC       :req.body.driverNTC,
+            NIC       :req.body.NIC,
+            NTC       :req.body.NTC,
             Name      :{
-                fName:req.body.driverFname,
-                lName:req.body.driverLname
+                fName:req.body.fName,
+                lName:req.body.lName
             },
-            DOB       :req.body.driverDOB,
-            Tel_No    :req.body.driverTP,
-            Add       :req.body.driverAddress
+            DOB       :req.body.DOB,
+            Tel_No    :req.body.Tel_No,
+            Add       :req.body.Add
         });
         newDriver.save(function (err) {
             if (err) {
                 utills.logger("Document is not saved", 500, err);
-                utills.sendResponce(500,res,err);
+                utills.sendResponce(200,res,err);
             } else {
                 utills.logger('Document is saved successfully', 200);
                 utills.sendResponce(200,res);
             }
         });
-        res.end();
     });
 
 
@@ -83,19 +81,64 @@ module.exports.postMethods = function (app) {
         var newRoute   = collectionModel.TrainRoutes({
             RouteNo:routeObject.RouteNo,
             Description:routeObject.Description,
-            StopPoints:routeObject.StopPoints,
+            StopPoints:routeObject.StopPoints
 
         });
         newRoute.save(function (err) {
             if (err) {
                 utills.logger("Document is not saved", 500, err);
-                utills.sendResponce(500,res,err);
+                utills.sendResponce(200,res,err);
             } else {
                 utills.logger('Document is saved successfully', 200);
                 utills.sendResponce(200,res);
             }
         });
     });
+
+
+
+
+
+    app.post('/post/schedule',function(req,res){
+        utills.logger("Successfuly accesed url" +req.url,200);
+        utills.DBConnection();
+        var scheduleObject = req.body;    //wrong sponsorobject
+        var newSchedule = collectionModel.TrainSchedules({
+            TrainId         :scheduleObject.TrainId,
+            TrainName      :scheduleObject.TrainName,
+            TrainType      :scheduleObject.TrainType,
+            RouteNo       :scheduleObject.RouteNo,
+            StartLocation :{
+                  Place :scheduleObject.Place,
+                 StartTime:scheduleObject.StartTime
+            },
+            StopLocation :{
+                Place :scheduleObject.Place,
+                StopTime:scheduleObject.StopTime
+            },
+            StopPoints   :scheduleObject.StopPoints
+        });
+        newSchedule.save(function (err) {
+            if (err) {
+                utills.logger("Document is not saved", 500, err);
+                utills.sendResponce(200,res,err);
+            } else {
+                utills.logger('Document is saved successfully', 200);
+                utills.sendResponce(200,res);
+            }
+        });
+
+    });
+
+
+
+
+
+
+
+
+
+
 
 
 

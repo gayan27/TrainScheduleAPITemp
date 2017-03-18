@@ -38,7 +38,7 @@ module.exports.updateMethods = function (app) {
                 utills.sendResponce(500,res,err);
             }else {
                 utills.logger('Document is saved successfully', 200);
-                utills.sendResponce(200,res,'',list);
+                utills.sendResponce(200,res,err,list);
             }
         });
     });
@@ -72,7 +72,40 @@ module.exports.updateMethods = function (app) {
             maxTimeMS: 300
         };
 
-        collectionModel.Driver.findOneAndUpdate(selection,update,options,function (err,list) {
+        collectionModel.Drivers.findOneAndUpdate(selection,update,options,function (err,list) {
+            if(err){
+                utills.logger("Document is not saved", 500, err);
+                utills.sendResponce(200,res,err);
+            }else {
+                utills.logger('Document is saved successfully', 200);
+                utills.sendResponce(200,res,'',list);
+            }
+        });
+    });
+
+
+    /**
+     * to update a Route by Its Route number
+     */
+    app.post('/update/route/:routes',function (req,res) {
+        utills.logger('sucessfully accessed ' + req.url, 200);
+        utills.DBConnection();
+        var selection={
+            RouteNo:req.params.routes
+        };
+        var update ={
+            RouteNo:req.body.RouteNo,
+            Descriptions:req.body.Description,
+            StopPoints: req.body.StopPoints
+        };
+
+        var options = {
+            new:true,
+            projection:{_id: false,__v:false},
+            maxTimeMS: 300
+        };
+
+        collectionModel.TrainRoutes.findOneAndUpdate(selection,update,options,function (err,list) {
             if(err){
                 utills.logger("Document is not saved", 500, err);
                 utills.sendResponce(500,res,err);
@@ -82,7 +115,6 @@ module.exports.updateMethods = function (app) {
             }
         });
     });
-
 
 
 
