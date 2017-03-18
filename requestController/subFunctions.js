@@ -17,8 +17,8 @@ function getRoute(sLoc, eLoc,callBack){
     var list =[];
     console.log(sLoc);  // to be removed
     console.log(eLoc);  // to be removed
-    var sLocation =sLoc.toUpperCase();
-    var eLocation =eLoc.toUpperCase();
+    var sLocation =sLoc;//toUpperCase();
+    var eLocation =eLoc;//toUpperCase();
     utills.logger("successfully accessed getRoute", 200);
     utills.DBConnection();
     collectionModels.TrainRoutes.find(function (err,data) {
@@ -32,13 +32,13 @@ function getRoute(sLoc, eLoc,callBack){
                 for(var j=0;j<data[i].StopPoints.length;j++){
                     var temp1 = false;
                     var temp2 = false;
-                    if ((data[i].StopPoints[j].place).toUpperCase() === sLocation) {
+                    if ((data[i].StopPoints[j].place) === sLocation) {
                         temp1 = true;
                         break;
                     }
                 }
                 for(var k=0;k<data[i].StopPoints.length;k++){
-                    if ((data[i].StopPoints[k].place).toUpperCase() === eLocation) {
+                    if ((data[i].StopPoints[k].place) === eLocation) {
                         temp2 = true;
                         break;
                     }
@@ -75,7 +75,7 @@ exports.getRoute=getRoute;
 function getFutureTrainList(array,reqTime,sLoc,callback){
     var fullArray=[];
     var result=[];
-    var sLocation =sLoc.toUpperCase();
+    var sLocation =sLoc;//toUpperCase();
     var count =0;
     utills.logger("successfully accessed getFutureTrainList", 200);
     utills.DBConnection();
@@ -103,7 +103,7 @@ function getFutureTrainList(array,reqTime,sLoc,callback){
                         for(var k =0;k < end;k++){
                             var nTime = parseInt(fullArray[j].stopPoints[k].arrivalTime);
                             var timeGap = (nTime - reqTime );
-                            var startPlace = (fullArray[j].stopPoints[k].place).toUpperCase();
+                            var startPlace = (fullArray[j].stopPoints[k].place);//toUpperCase();
 
                             if((timeGap <= 15 && timeGap >=0) && (startPlace === sLocation)){
                                 console.log(nTime+" "+timeGap+" "+startPlace); // to be removed

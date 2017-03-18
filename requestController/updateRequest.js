@@ -20,10 +20,10 @@ module.exports.updateMethods = function (app) {
             ID :req.params.trainId
         };
         var update ={
-            ID        :req.body.trainId,
-            D_NTC     :req.body.driverNTC,
-            RouteNo   :req.body.routeNo,
-            TrainType :req.body.trainType
+            ID        :req.body.ID,
+            D_NTC     :req.body.D_NTC,
+            RouteNo   :req.body.RouteNo,
+            TrainType :req.body.TrainType
         };
 
         var options = {
@@ -55,15 +55,15 @@ module.exports.updateMethods = function (app) {
             NTC :req.params.ntc
         };
         var update ={
-            NIC: req.body.driverNIC,
-            NTC: req.body.driverNTC,
+            NIC: req.body.NIC,
+            NTC: req.body.NTC,
             Name: {
-                fName: req.body.driverFName,
-                lName: req.body.driverLName
+                fName: req.body.fName,
+                lName: req.body.lName
             },
-            DOB: req.body.driverDOB,
-            Tel_No: req.body.driverTP,
-            Add: req.body.driverAddress
+            DOB: req.body.DOB,
+            Tel_No: req.body.Tel_No,
+            Add: req.body.Add
         };
 
         var options = {
