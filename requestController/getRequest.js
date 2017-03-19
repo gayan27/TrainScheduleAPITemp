@@ -157,9 +157,9 @@ module.exports.getMethods = function (app) {
                     if(err){
                         utills.logger("Error happen :",500,err);
                         res.setHeader('Content-Type', 'application/json');
-                        res.status(200).send({status: 'Error', content: ""});
+                        res.status(500).send({status: 'Error', content: ""});
                     }else{
-                        //console.log(list);
+                        console.log(list);
                       res.setHeader('Content-Type', 'application/json');
                         res.status(200).send({status: 'success', content: list});
                         utills.logger("successfully send the array list ", 200);
