@@ -3,5 +3,5 @@
   "DB_HOST": "35.162.168.220",
   "DB_PORT":  27017,
   "DB_NAME": "TrainScheduleDB"
-  
+
 }

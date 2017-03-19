@@ -48,7 +48,7 @@ var place = new Schema({
 });
 
 var Schedule = new Schema({
-    TrainId         :{type:String,unique:true, required:true,max:6},
+    TrainId         :{type:String, required:true,max:6},
     TrainName       :{type:String, required:true},
     TrainType       :{type:String, required:true},
     RouteNo         :{type:String, required:true},
@@ -70,9 +70,9 @@ exports.TrainSchedules= mongoose.model('TrainSchedules',Schedule);
  * create a schema to enter a Root
  */
 var geoData = new Schema({
-    place      : {type:String,require:true},
-    latitude   : {type:Number,require:true},
-    longitude  : {type:Number,require:true}
+    Place      : {type:String,require:true},
+    Latitude   : {type:Number,require:true},
+    Longitude  : {type:Number,require:true}
 });
 
 var route = new Schema({
