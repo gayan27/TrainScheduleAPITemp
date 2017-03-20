@@ -50,7 +50,6 @@ module.exports.getMethods = function (app) {
 
     });
 
-
     /**
      * send all drivers listed in the database
      */
@@ -138,11 +137,10 @@ module.exports.getMethods = function (app) {
     //===========================================================================
 
 
-
     /**
      * this method will return scheduled trains after the requested time
      */
-    app.get('/get/future-schedule/:startLocation/:endLocation/:sTime',function (req,res) {
+    app.get('/get/fschedule/:startLocation/:endLocation/:sTime',function (req,res) {
         var sLocation =   req.params.startLocation;
         var eLocation = req.params.endLocation;
         var sTime      = parseInt(req.params.sTime);
@@ -152,7 +150,6 @@ module.exports.getMethods = function (app) {
             if(err){
                 utills.logger("Error happen :",500,err);
             }else {
-                console.log(routes);  //remove after compleation
                 subFunctions.getFutureTrainList(routes,sTime,sLocation,function (err,list ){
                     if(err){
                         utills.logger("Error happen :",500,err);
@@ -171,6 +168,46 @@ module.exports.getMethods = function (app) {
         });
 
     });
+
+
+
+    /**
+     * this method will return posible Train List
+     */
+    /**
+     * this method will return scheduled trains after the requested time
+     */
+    app.get('/get/pschedule/:startLocation/:endLocation/:sTime',function (req,res) {
+        var sLocation =   req.params.startLocation;
+        var eLocation = req.params.endLocation;
+        var sTime      = parseInt(req.params.sTime);
+
+        subFunctions.getRoute(sLocation ,eLocation,function (err,routeList) {
+            var routes = routeList;
+            if(err){
+                utills.logger("Error happen :",500,err);
+            }else {
+                //console.log(routes);  //remove after compleation
+                subFunctions.getPosibleTrainList(routes,sTime,sLocation,function (err,list ){
+                    if(err){
+                        utills.logger("Error happen :",500,err);
+                        res.setHeader('Content-Type', 'application/json');
+                        res.status(200).send({status: 'Error', content: ""});
+                    }else{
+                        console.log(list);
+                        res.setHeader('Content-Type', 'application/json');
+                        res.status(200).send({status: 'success', content: list});
+                        utills.logger("successfully send the array list ", 200);
+
+                    }
+
+                });
+            }
+        });
+
+    });
+
+
 
 
 };
