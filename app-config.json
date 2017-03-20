@@ -1,6 +1,6 @@
 ﻿{
   "SERVER_PORT": 8000,
-  "DB_HOST": "127.0.0.1",
+  "DB_HOST": "35.162.168.220",
   "DB_PORT":  27017,
   "DB_NAME": "TrainScheduleDB"
 
